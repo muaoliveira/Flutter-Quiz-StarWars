@@ -1,13 +1,10 @@
-//import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './resultado.dart';
 import 'questionario.dart';
 
 void main() => runApp(perguntaApp());
 
-// ignore: camel_case_types
 class _perguntaAppState extends State<perguntaApp> {
-  //definir indice para a pergunta iniciar em 0
   var _perguntaSelecionada = 0;
   var _pontuacaoTotal = 0;
 
@@ -50,7 +47,6 @@ class _perguntaAppState extends State<perguntaApp> {
     }
   ];
 
-  //função para tratar o event onPressed
   void _responder(int pontuacao) {
     setState(() {
       _perguntaSelecionada++;
@@ -66,8 +62,7 @@ class _perguntaAppState extends State<perguntaApp> {
   }
   
   bool get temPerguntaSelecionada {
-    return _perguntaSelecionada <
-        _perguntas.length; //se pergunta selecionada for menor que o Length de perguntas
+    return _perguntaSelecionada < _perguntas.length;
   }
 
   @override

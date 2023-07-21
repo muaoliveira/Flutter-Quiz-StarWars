@@ -9,7 +9,6 @@ class Resposta extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Container(
-      //width: double.tryParse('300'),
       width: 300,
       child: ElevatedButton(
             style: ElevatedButton.styleFrom(

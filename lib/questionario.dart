@@ -16,7 +16,7 @@ class Questionario extends StatelessWidget {
   });
 
   bool get temPerguntaSelecionada {
-    return perguntaSelecionada < perguntas.length; //se pergunta selecionada for menor que o Length de perguntas
+    return perguntaSelecionada < perguntas.length;
   }
 
   @override
@@ -33,7 +33,7 @@ class Questionario extends StatelessWidget {
               return Resposta(
                 resp['texto'].toString(),
                 () => responder(int.parse(resp['pontuacao'].toString())),
-            );// ... faz com que popule todos os itens da lista de widgets
+            );
           }
         )
       ],
